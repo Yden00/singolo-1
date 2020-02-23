@@ -1,0 +1,324 @@
+/*
+   FONTS
+*/
+
+/*300*/
+@font-face {
+  font-family: 'Lato Light';
+  src: url('assets/fonts/lato-light-webfont.woff2') format('woff2'),
+  url('assets/fonts/lato-light-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*400*/
+@font-face {
+  font-family: 'Lato Regular'; 
+  src: url('assets/fonts/lato-regular-webfont.woff2') format('woff2'),
+  url('assets/fonts/lato-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*700*/
+@font-face {
+  font-family: 'Lato Bold';
+  src: url('assets/fonts/lato-bold-webfont.woff2') format('woff2'),
+  url('assets/fonts/lato-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*900*/
+@font-face {
+  font-family: 'Lato Black';
+  src: url('assets/fonts/lato-black-webfont.woff2') format('woff2'),
+  url('assets/fonts/lato-black-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+
+/*
+   WRAPPER
+*/
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 1020px;
+  box-sizing: border-box;
+}
+
+
+/*
+   HEADER
+*/
+
+header {
+  align-items: baseline;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 40px 31px 40px;
+  background-color: #2d303a;
+  border-bottom: #323746 5.5px solid;
+}
+
+.logo {
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+  font-family: "Lato Regular", "Arial", sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.logo span {
+  color: #f06c64;
+}
+
+.header-nav {
+  display: flex;
+  margin: 0;
+  list-style: none;
+  font-family: "Lato Bold", "Arial", sans-serif;
+  font-weight: 700;
+}
+
+.header-nav > li {
+  position: relative;
+  margin-left: 31px;
+  font-size: 12px;
+  letter-spacing: -0.3px;
+  text-transform: uppercase;
+}
+
+.header-nav a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.header-nav a:hover {
+  color: #f06c64;
+}
+
+.header-nav a.active {
+  color: #f06c64;
+  cursor: default;
+}
+
+.header-nav li:not(:first-child)::before {
+  position: absolute;
+  left: -17px;
+  top: 5px;
+  color: #494e62;
+  content: "\2022";
+  font-size: 5px;
+}
+
+
+
+/*
+   SLIDER
+*/
+
+.slider {
+  box-sizing: border-box;
+  height: 600px;
+  background-color: #f06c64;
+  border-bottom: #ea676b 6px solid;
+}
+
+.controls {
+  position: absolute;
+}
+
+.arrow {
+  position: absolute;
+  height: 27px;
+  width: 16px;
+}
+
+.arrow-left {
+  left: 42px;
+  top: 281px;
+  background: no-repeat url("assets/icons/arrow.svg");
+}
+
+.arrow-left:hover {
+  left: 40.5px;
+  cursor: pointer;
+}
+
+.arrow-right {
+  left: 964px;
+  top: 281px;
+  background: no-repeat url("assets/icons/arrow.svg");
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+.arrow-right:hover {
+  left: 966px;
+  cursor: pointer;
+}
+
+.slide-one {
+  position: relative;
+  display: flex;
+}
+
+.vertical, 
+.horizontal {
+  position: absolute;
+}
+
+.shadow {
+  position: absolute;
+  z-index: 1;
+}
+
+.phone-wallpaper {
+  position: absolute;
+  z-index: 2;
+}
+
+.phone {
+  position: absolute;
+  z-index: 3;
+}
+
+.vertical {
+  left: 112px;
+  top: 53px;
+}
+.vertical > .phone-wallpaper {
+  left: 6px;
+  top: 47px;
+  height: 370px;
+  width: 205px;
+  background: -6px -117px no-repeat url("assets/images/bg_green.png");
+}
+
+
+.horizontal {
+  left: 883px;
+  top: 174px;
+  transform: rotate(0.25turn);
+}
+
+.horizontal > .shadow {
+  top: -26px;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+.horizontal > .phone-wallpaper {
+  left: -76px;
+  top: 129px;
+  height: 205px;
+  width: 370px;
+  background: -107px -111px no-repeat url("assets/images/bg_blue.png");
+  transform: rotate(-0.25turn);
+}
+
+
+
+/*
+   SERVICES
+*/
+
+.services {
+  padding: 35px 30px 32px 30px;
+  background-color: #f2f2f2;
+  border-bottom: #ffffff 5.5px solid;
+  color: #666d89;
+}
+
+.services > h2 {
+  margin-bottom: 21px;
+  padding: 0 10px;
+  letter-spacing: 0.1px;
+  font-family: "Lato Black", "Arial", sans-serif;
+  font-weight: 900;
+  font-size: 30px;
+}
+
+.services > .description {
+  padding: 0 10px;
+  font-family: "Lato Light", "Arial", sans-serif;
+  font-size: 17.5px;
+  font-weight: 300;
+  line-height: 30px;
+  text-align: justify;
+}
+
+.services > ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 0;
+  margin-top: 44px;
+  padding: 0;
+  list-style: none;
+}
+
+.services li {
+  display: flex;
+  margin: 0 10px 20px 10px;
+  width: 300px;
+  box-sizing: border-box;
+}
+.services h3 {
+  margin: 0;
+  font-family: "Lato Black", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 18px;
+  text-align: left;
+  color: #666d89;
+}
+
+
+.services i {
+  display: block;
+  height: 64px;
+  margin-right: 18px;
+  width: 62px;
+}
+
+i.pen {
+  background: 0 1px no-repeat url("assets/icons/pen.svg");
+}
+
+i.bulb {
+  background: 0 1px no-repeat url("assets/icons/bulb.svg");
+}
+
+i.heart {
+  background: 0 1px no-repeat url("assets/icons/heart.svg");
+}
+
+i.phone-icon {
+  background: 0 1px no-repeat url("assets/icons/phone.svg");
+}
+
+i.bubble {
+  background: 0 1px no-repeat url("assets/icons/bubble.svg");
+}
+
+i.star {
+  background: 0 1px no-repeat url("assets/icons/star.svg");
+}
+
+.services li p {
+  margin-top: 10px;
+  font-family: "Lato Regular", "Arial", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 21.5px;
+  text-align: justify;
+  color: #767e9e;
+}
+
