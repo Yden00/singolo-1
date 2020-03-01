@@ -1,0 +1,238 @@
+/*
+   FONTS
+*/
+
+/*300*/
+@font-face {
+  font-family: 'Lato Light';
+  src: url('assets/fonts/lato-light-webfont.woff2') format('woff2'),
+  url('assets/fonts/lato-light-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*400*/
+@font-face {
+  font-family: 'Lato Regular';
+  src: url('assets/fonts/lato-regular-webfont.woff2') format('woff2'),
+  url('assets/fonts/lato-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*700*/
+@font-face {
+  font-family: 'Lato Bold';
+  src: url('assets/fonts/lato-bold-webfont.woff2') format('woff2'),
+  url('assets/fonts/lato-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*900*/
+@font-face {
+  font-family: 'Lato Black';
+  src: url('assets/fonts/lato-black-webfont.woff2') format('woff2'),
+  url('assets/fonts/lato-black-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+
+/*
+   WRAPPER
+*/
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 1020px;
+  box-sizing: border-box;
+}
+
+
+
+/*
+   Quote
+*/
+
+.quote {
+  padding: 43px 30px 52px 30px;
+  background-color: #f06c64;
+  border-bottom: #ea676b 5.5px solid;
+  color: #f0d8d9;
+}
+
+.quote > h2 {
+  margin-bottom: 27px;
+  padding: 0 10px;
+  font-family: "Lato Black", "Arial", sans-serif;
+  font-weight: 900;
+  font-size: 30px;
+  letter-spacing: -0.2px;
+  line-height: 18px;
+}
+
+.quote > .description {
+  margin-bottom: 10px;
+  padding: 0 10px;
+  font-family: "Lato Light", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: -0.2px;
+  line-height: 30px;
+  text-align: justify;
+}
+
+.form-description {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 34px 0 0 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 65.2%;
+  margin-right: 21px;
+}
+
+.input {
+  background-color: #d6564f;
+  padding: 7px 14px 9px 14px;
+  margin-bottom: 16px;
+  border: none;
+  border-radius: 5px;
+  font-size: 12px;
+  line-height: 22px;
+  font-family: "Lato Regular", "Arial", sans-serif;
+  font-weight: 400;
+  color: #f0d8d9;
+}
+
+.input::placeholder {
+  color: #f48c8f;
+  opacity: 1; /* Firefox */
+}
+
+.input:focus {
+  outline: none;
+  border: none;
+}
+
+textarea {
+  box-sizing: border-box;
+  height: 202px;
+}
+
+
+.send {
+  width: 100px;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 5px;
+  font-size: 12px;
+  line-height: 22px;
+  font-family: "Lato Regular", "Arial", sans-serif;
+  font-weight: 400;
+  background-color: #f2f2f2;
+  color: #2d303a;
+  cursor: pointer;
+}
+.contact-information {
+  width: 300px;
+  text-align: justify;
+}
+
+.contact-information h3 {
+  margin: 0;
+  font-family: "Lato Black", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 18px;
+}
+
+.contact-information p {
+  margin: 10px 0 25px 0;
+  font-family: "Lato Regular", "Arial", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: -0.1px;
+  line-height: 22px;
+  text-align: justify;
+}
+
+.contact-detail {
+  margin-bottom: 8px;
+  padding-left: 22px;
+  font-family: "Lato Regular", "Arial", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: -0.1px;
+}
+
+.contact-detail.location {
+  background: 3px 0 no-repeat url("assets/icons/quote/location.png");
+}
+
+.contact-detail.phone {
+  background: 1px 0 no-repeat url("assets/icons/quote/phone.png");
+}
+
+.contact-detail.email {
+  background: 0 4px no-repeat url("assets/icons/quote/email.png");
+}
+
+.contact-detail a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+/*
+   Footer
+*/
+
+.footer {
+  background-color: #2d303a;
+  color: #5e657e;
+  display: flex;
+  justify-content: space-between;
+  height: 76px;
+  align-items: center;
+}
+
+.copyright p {
+  margin: 0 0 0 41px;
+  font-family: "Lato Regular", "Arial", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: -0.2px;
+  line-height: 22px;
+} 
+
+.social {
+  display: flex;
+  margin-right: 32px;
+}
+
+.social a {
+  display: flex;
+  align-items: center;
+  margin-right: 8px;
+  height: 30px;
+  width: 30px;
+  border: 1px solid #666d89;
+  border-radius: 100%;
+}
+
+.social .icon {
+  height: 15px;
+  margin: 0 auto;
+}
+
+.social a:hover {
+  background-color: #f06c64;
+  border-color: #f06c64;
+}
