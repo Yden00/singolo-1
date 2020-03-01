@@ -1,0 +1,250 @@
+/*
+   FONTS
+*/
+
+/*300*/
+@font-face {
+  font-family: 'Lato Light';
+  src: url('assets/fonts/lato-light-webfont.woff2') format('woff2'),
+  url('assets/fonts/lato-light-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*400*/
+@font-face {
+  font-family: 'Lato Regular';
+  src: url('assets/fonts/lato-regular-webfont.woff2') format('woff2'),
+  url('assets/fonts/lato-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*700*/
+@font-face {
+  font-family: 'Lato Bold';
+  src: url('assets/fonts/lato-bold-webfont.woff2') format('woff2'),
+  url('assets/fonts/lato-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*900*/
+@font-face {
+  font-family: 'Lato Black';
+  src: url('assets/fonts/lato-black-webfont.woff2') format('woff2'),
+  url('assets/fonts/lato-black-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+
+/*
+   WRAPPER
+*/
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 1020px;
+  box-sizing: border-box;
+}
+
+
+
+/*
+   Portfolio
+*/
+
+.portfolio {
+  padding: 45px 30px 48px 30px;
+  background-color: #2d303a;
+  border-bottom: #323746 5.5px solid;
+  color: #666d89;
+}
+
+.portfolio > h2 {
+  margin-bottom: 27px;
+  padding: 0 10px;
+  letter-spacing: 0.3px;
+  font-family: "Lato Black", "Arial", sans-serif;
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 18px;
+}
+
+.portfolio > .description {
+  margin-bottom: 10px;
+  padding: 0 10px;
+  font-family: "Lato Light", "Arial", sans-serif;
+  font-size: 17.5px;
+  font-weight: 300;
+  line-height: 30px;
+  text-align: justify;
+}
+
+.portfolio .tags {
+  margin-left: 11px;
+}
+
+.portfolio .tag {
+  margin-right: 6px;
+  padding: 1px 6px 3px 6px;
+  font-family: "Lato Regular", "Arial", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 22px;
+  color: #767e9e;
+  border: 1px solid #767e9e;
+  border-radius: 6px;
+}
+
+.portfolio .tag-active {
+  color: #ffffff;
+  border-color: #ffffff;
+}
+
+.portfolio .tag:hover {
+  cursor: pointer;
+  background-color: #f06c64;
+  color: #f2f2f2;
+  border-color: #f06c64;
+}
+
+.portfolio .elements {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 19px;
+  padding-left: 0;
+}
+
+.portfolio .elements div {
+  padding: 0 10px 16px 10px;
+}
+
+.portfolio .elements div:nth-child(n+13) {
+  display: none;
+  visibility: hidden;
+}
+
+
+
+/*
+   About Us
+*/
+
+.about-us {
+  padding: 44px 30px 50px 30px;
+  background-color: #f2f2f2;
+  border-bottom: #ffffff 6px solid;
+  color: #666d89;
+}
+
+.about-us > h2 {
+  margin-bottom: 27px;
+  padding: 0 10px;
+  letter-spacing: -0.1px;
+  font-family: "Lato Black", "Arial", sans-serif;
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 18px;
+}
+
+.about-us > .description {
+  margin-bottom: 10px;
+  padding: 0 10px;
+  font-family: "Lato Light", "Arial", sans-serif;
+  font-size: 17.5px;
+  font-weight: 300;
+  line-height: 30px;
+  text-align: justify;
+}
+
+.contact-cards {
+  list-style: none;
+  display: flex;
+  padding-left: 9px;
+  padding-top: 28px;
+}
+
+.contact-cards li {
+  width: 300px;
+  margin-right: 20px;
+}
+
+.contact-cards li:nth-of-type(1) img {
+  padding-left: 0.2px;
+}
+
+.contact-cards li:nth-of-type(2) img {
+  /*padding-left: 0.5px;*/
+}
+
+.contact-cards li:nth-of-type(3) img {
+  padding-left: 1px;
+}
+
+.contact-cards li h3 {
+  margin-bottom: 10px;
+  margin-top: 13px;
+  font-family: "Lato Black", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: 900;
+  letter-spacing: 0.1px;
+  line-height: 18px;
+  text-align: left;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  color: #666d89;
+}
+
+.contact-cards li p {
+  margin-top: 0;
+  padding-left: 1px;
+  font-family: "Lato Regular", "Arial", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: justify;
+  color: #767e9e;
+}
+
+.contact-cards i {
+  display: block;
+  height: 64px;
+  margin-right: 18px;
+  width: 62px;
+}
+
+i.facebook {
+  background: 0 1px no-repeat url("assets/icons/social/facebook (2).svg");
+}
+
+.social {
+  margin-top: 23px;
+  display: flex;
+  padding-left: 2px;
+}
+
+.social a {
+  display: flex;
+  align-items: center;
+  margin-right: 8px;
+  height: 30px;
+  width: 30px;
+  border: 1px solid #666d89;
+  border-radius: 100%;
+}
+
+.social .icon {
+  height: 15px;
+  margin: 0 auto;
+}
+
+.social a:hover {
+  background-color: #f06c64;
+  border-color: #f06c64;
+}
+
